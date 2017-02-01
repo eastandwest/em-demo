@@ -1,0 +1,26 @@
+mqtt-handler: 
+  broakers:
+  - name: onESE
+    url: mqtt://10.49.53.14
+    watch-topics:
+    - rpi129/mem_usage
+    - rpi129/cpu_usage
+    - rpi129/temperature
+    - rpi129/traffic
+    - rpi130/mem_usage
+    - rpi130/cpu_usage
+    - rpi130/temperature
+    - rpi130/traffic
+    - rpi131/mem_usage
+    - rpi131/cpu_usage
+    - rpi131/temperature
+    - rpi131/traffic
+rest-server:
+  session_secret: SECRET_STRING
+  port: 3000
+  protocol: http
+local-db:
+  tag: PaloAlto
+  entrypoint: http://10.49.53.14:8086/mydb
+  interval: 60000
+
