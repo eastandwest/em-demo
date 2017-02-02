@@ -46,7 +46,7 @@ sudo ./build.sh
 * run
 
 ```
-sudo docker run -p 3000:3000 -d grafana:latest
+sudo docker run -p 3000:3000 -d cxc-demo/grafana:latest
 ```
 
 * after
