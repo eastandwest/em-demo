@@ -40,7 +40,7 @@ accsess admin UI with port 8083, then create database likewise 'mydb'
 
 ```
 cd grafana
-./build.sh
+sudo ./build.sh
 ```
 
 * run
