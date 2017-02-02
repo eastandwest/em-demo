@@ -56,7 +56,7 @@ accsess GUI console with port 3000, then edit graph setting
 
 ## ifogcloud
 
-* pre build
+* edit configuration
 
 edit ``server_conf.yaml`` and ``monitor_conf.yaml`` to match your setting.
 
