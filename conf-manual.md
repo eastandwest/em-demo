@@ -42,7 +42,15 @@ ssh raspberry PI, then change
 * rpi-mqtt/conf/config.json
 
   - change URL of **mqtt-broaker**
-  
+
+* apply conf change
+
+restart app by pm2
+
+```bash
+pm2 restart publisher
+pm2 restart ssg
+```
 
 ## trouble shoot
 
