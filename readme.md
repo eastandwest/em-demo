@@ -72,3 +72,7 @@ sudo docker build -t demo-ifogcloud .
 ```
 sudo docker run -e NODE_ENV=production -p 3001:3000 -d demo-ifogcloud
 ```
+
+# how to configure and trouble shooting
+
+see [manual](/eastandwest/em-demo/blob/master/conf-manual.md)
