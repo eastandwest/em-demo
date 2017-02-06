@@ -959,21 +959,103 @@ components:
       position:
         lat: 40.7358835
         lng: -74.007578
-  - id: grafana-panel1
-    type: grafana
-    entryUrl: http://165.254.239.231:3000/dashboard-solo/db/new-dashboard-copy
-    panelId: 1
-    range : 42300000
-  - id: grafana-panel2
-    type: grafana
-    entryUrl: http://165.254.239.231:3000/dashboard-solo/db/new-dashboard-copy
-    panelId: 5
-    range : 42300000
-  - id: grafana-panel3
-    type: grafana
-    entryUrl: http://165.254.239.231:3000/dashboard-solo/db/new-dashboard-copy
-    panelId: 6
-    range : 42300000
+  # history graph setting
+  - id: history-rpi129-cpu-usage
+    type: history-chart
+    title: rpi129/cpu
+    entrypoint: http://165.254.239.231:8086/mydb
+    measurement: rpi129/cpu_usage
+    fields:
+    - 1min
+    - 5min
+    - 15min
+  - id: history-rpi130-cpu-usage
+    type: history-chart
+    title: rpi130/cpu
+    entrypoint: http://165.254.239.231:8086/mydb
+    measurement: rpi130/cpu_usage
+    fields:
+    - 1min
+    - 5min
+    - 15min
+  - id: history-rpi131-cpu-usage
+    type: history-chart
+    title: rpi131/cpu
+    entrypoint: http://165.254.239.231:8086/mydb
+    measurement: rpi131/cpu_usage
+    fields:
+    - 1min
+    - 5min
+    - 15min
+  - id: history-rpi129-mem-usage
+    type: history-chart
+    title: rpi129/mem
+    entrypoint: http://165.254.239.231:8086/mydb
+    measurement: rpi129/mem_usage
+    fields:
+    - used
+    - total
+  - id: history-rpi130-mem-usage
+    type: history-chart
+    title: rpi130/mem
+    entrypoint: http://165.254.239.231:8086/mydb
+    measurement: rpi130/mem_usage
+    fields:
+    - used
+    - total
+  - id: history-rpi131-mem-usage
+    type: history-chart
+    title: rpi131/mem
+    entrypoint: http://165.254.239.231:8086/mydb
+    measurement: rpi131/mem_usage
+    fields:
+    - used
+    - total
+  - id: history-rpi129-temperature
+    type: history-chart
+    title: rpi129/temperature
+    entrypoint: http://165.254.239.231:8086/mydb
+    measurement: rpi129/temperature
+    fields:
+    - cpu
+  - id: history-rpi130-temperature
+    type: history-chart
+    title: rpi130/temperature
+    entrypoint: http://165.254.239.231:8086/mydb
+    measurement: rpi130/temperature
+    fields:
+    - cpu
+  - id: history-rpi131-temperature
+    type: history-chart
+    title: rpi131/temperature
+    entrypoint: http://165.254.239.231:8086/mydb
+    measurement: rpi131/temperature
+    fields:
+    - cpu
+  - id: history-rpi129-traffic
+    type: history-chart
+    title: rpi129/traffic
+    entrypoint: http://165.254.239.231:8086/mydb
+    measurement: rpi129/traffic
+    fields:
+    - bps_in
+    - bps_out
+  - id: history-rpi130-traffic
+    type: history-chart
+    title: rpi130/traffic
+    entrypoint: http://165.254.239.231:8086/mydb
+    measurement: rpi130/traffic
+    fields:
+    - bps_in
+    - bps_out
+  - id: history-rpi131-traffic
+    type: history-chart
+    title: rpi131/traffic
+    entrypoint: http://165.254.239.231:8086/mydb
+    measurement: rpi131/traffic
+    fields:
+    - bps_in
+    - bps_out
 layout:
   all:
   - 
@@ -995,13 +1077,13 @@ layout:
       width: 6
       children:
       -
-        - id: grafana-panel1
+        - id: history-rpi129-cpu-usage
           width: 12 
       -
-        - id: grafana-panel2
+        - id: history-rpi130-cpu-usage
           width: 12 
       -
-        - id: grafana-panel3
+        - id: history-rpi131-cpu-usage
           width: 12 
   rpi129:
   - 
@@ -1035,13 +1117,16 @@ layout:
       width: 6
       children:
       -
-        - id: grafana-panel1
+        - id: history-rpi129-cpu-usage
           width: 12 
       -
-        - id: grafana-panel2
+        - id: history-rpi129-mem-usage
           width: 12 
       -
-        - id: grafana-panel3
+        - id: history-rpi129-temperature
+          width: 12 
+      -
+        - id: history-rpi129-traffic
           width: 12 
   rpi130:
   - 
@@ -1075,13 +1160,16 @@ layout:
       width: 6
       children:
       -
-        - id: grafana-panel1
+        - id: history-rpi130-cpu-usage
           width: 12 
       -
-        - id: grafana-panel2
+        - id: history-rpi130-mem-usage
           width: 12 
       -
-        - id: grafana-panel3
+        - id: history-rpi130-temperature
+          width: 12 
+      -
+        - id: history-rpi130-traffic
           width: 12 
   rpi131:
   -
@@ -1116,12 +1204,15 @@ layout:
       width: 6
       children:
       -
-        - id: grafana-panel1
+        - id: history-rpi131-cpu-usage
           width: 12 
       -
-        - id: grafana-panel2
+        - id: history-rpi131-mem-usage
           width: 12 
       -
-        - id: grafana-panel3
+        - id: history-rpi131-temperature
+          width: 12 
+      -
+        - id: history-rpi131-traffic
           width: 12 
 
