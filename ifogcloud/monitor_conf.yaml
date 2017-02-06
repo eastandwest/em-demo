@@ -651,7 +651,9 @@ components:
   - id: history-rpi133-cpu-usage
     type: history-chart
     title: rpi133/cpu
-    entrypoint: http://165.254.239.232:8086/mydb
+    hostname: 165.254.239.232
+    port: 8086
+    dbname: mydb
     measurement: rpi133/cpu_usage
     fields:
     - 1min
@@ -660,7 +662,9 @@ components:
   - id: history-rpi134-cpu-usage
     type: history-chart
     title: rpi134/cpu
-    entrypoint: http://165.254.239.232:8086/mydb
+    hostname: 165.254.239.232
+    port: 8086
+    dbname: mydb
     measurement: rpi134/cpu_usage
     fields:
     - 1min
@@ -669,7 +673,9 @@ components:
   - id: history-rpi133-mem-usage
     type: history-chart
     title: rpi133/mem
-    entrypoint: http://165.254.239.232:8086/mydb
+    hostname: 165.254.239.232
+    port: 8086
+    dbname: mydb
     measurement: rpi133/mem_usage
     fields:
     - free
@@ -677,7 +683,9 @@ components:
   - id: history-rpi134-mem-usage
     type: history-chart
     title: rpi134/mem
-    entrypoint: http://165.254.239.232:8086/mydb
+    hostname: 165.254.239.232
+    port: 8086
+    dbname: mydb
     measurement: rpi134/mem_usage
     fields:
     - free
@@ -685,21 +693,27 @@ components:
   - id: history-rpi133-temperature
     type: history-chart
     title: rpi133/temperature
-    entrypoint: http://165.254.239.232:8086/mydb
+    hostname: 165.254.239.232
+    port: 8086
+    dbname: mydb
     measurement: rpi133/temperature
     fields:
     - cpu
   - id: history-rpi134-temperature
     type: history-chart
     title: rpi134/temperature
-    entrypoint: http://165.254.239.232:8086/mydb
+    hostname: 165.254.239.232
+    port: 8086
+    dbname: mydb
     measurement: rpi134/temperature
     fields:
     - cpu
   - id: history-rpi133-traffic
     type: history-chart
     title: rpi133/traffic
-    entrypoint: http://165.254.239.232:8086/mydb
+    hostname: 165.254.239.232
+    port: 8086
+    dbname: mydb
     measurement: rpi133/traffic
     fields:
     - bps_in
@@ -707,7 +721,9 @@ components:
   - id: history-rpi134-traffic
     type: history-chart
     title: rpi134/traffic
-    entrypoint: http://165.254.239.232:8086/mydb
+    hostname: 165.254.239.232
+    port: 8086
+    dbname: mydb
     measurement: rpi134/traffic
     fields:
     - bps_in
