@@ -17,7 +17,7 @@ components:
     data-category: cpu
     topic: rpi133/cpu_usage
     data-type: json
-    max-points: 1 
+    max-points: 1
     props:
     - 1min
     chart:
@@ -28,9 +28,9 @@ components:
       type: doughnut
       datasets:
       - label: 1min
-        backgroundColor: 
+        backgroundColor:
         - rgba(30, 30, 30, 0.4)
-        borderColor: 
+        borderColor:
         - rgba(30, 30, 30, 1)
       signal:
         blue:
@@ -39,14 +39,14 @@ components:
         yellow:
           backgroundColor: rgba(243, 247, 27, 0.8)
           borderColor: rgba(243, 247, 27, 1)
-        red: 
+        red:
           backgroundColor: rgba(236, 20, 143, 0.8)
           borderColor: rgba(236, 20, 143, 1)
       options:
-        legend: 
+        legend:
           display: false
-        elements: 
-          center: 
+        elements:
+          center:
             maxText: 100%
             text: ''
             fontColor: rgba(225, 228, 203, 0.8)
@@ -63,7 +63,7 @@ components:
     data-category: temperature
     topic: rpi133/temperature
     data-type: json
-    max-points: 1 
+    max-points: 1
     props:
     - cpu
     chart:
@@ -74,9 +74,9 @@ components:
       type: doughnut
       datasets:
       - label: cpu
-        backgroundColor: 
+        backgroundColor:
         - rgba(30, 30, 30, 0.4)
-        borderColor: 
+        borderColor:
         - rgba(30, 30, 30, 1)
       signal:
         blue:
@@ -85,14 +85,14 @@ components:
         yellow:
           backgroundColor: rgba(243, 247, 27, 0.8)
           borderColor: rgba(243, 247, 27, 1)
-        red: 
+        red:
           backgroundColor: rgba(236, 20, 143, 0.8)
           borderColor: rgba(236, 20, 143, 1)
       options:
-        legend: 
+        legend:
           display: false
-        elements: 
-          center: 
+        elements:
+          center:
             maxText: 100%
             text: ''
             fontColor: rgba(225, 228, 203, 0.8)
@@ -109,7 +109,7 @@ components:
     data-category: memory
     topic: rpi133/mem_usage
     data-type: json
-    max-points: 1 
+    max-points: 1
     props:
     - used
     - free
@@ -121,9 +121,9 @@ components:
       type: doughnut
       datasets:
       - label: used
-        backgroundColor: 
+        backgroundColor:
         - rgba(30, 30, 30, 0.4)
-        borderColor: 
+        borderColor:
         - rgba(30, 30, 30, 1)
       signal:
         blue:
@@ -132,14 +132,14 @@ components:
         yellow:
           backgroundColor: rgba(243, 247, 27, 0.8)
           borderColor: rgba(243, 247, 27, 1)
-        red: 
+        red:
           backgroundColor: rgba(236, 20, 143, 0.8)
           borderColor: rgba(236, 20, 143, 1)
       options:
-        legend: 
+        legend:
           display: false
-        elements: 
-          center: 
+        elements:
+          center:
             maxText: 100%
             text: ''
             fontColor: rgba(225, 228, 203, 0.8)
@@ -186,8 +186,8 @@ components:
         backgroundColor: rgba(243, 247, 27, 0.8)
         borderColor: rgba(243, 247, 27, 1)
       options:
-        scales: 
-          yAxes: 
+        scales:
+          yAxes:
           - ticks:
               max: 4
               min: 0
@@ -221,8 +221,8 @@ components:
         borderColor: rgba(21, 224, 151, 1)
       options:
         scaleShowLabels: false
-        scales: 
-          yAxes: 
+        scales:
+          yAxes:
           - ticks:
               min: 0
               max: 100
@@ -233,7 +233,7 @@ components:
           - gridLines:
               color: '#ccc'
               display: false
- 
+
   - id: sensor-line-rpi133-mem-usage
     type: sensor
     data-category: memory
@@ -264,8 +264,8 @@ components:
         borderColor: rgba(244, 66, 134, 1)
       options:
         scaleShowLabels: false
-        scales: 
-          yAxes: 
+        scales:
+          yAxes:
           - ticks:
               min: 0
             gridLines:
@@ -305,8 +305,8 @@ components:
         backgroundColor: rgba(21, 224, 151, 0.4)
         borderColor: rgba(21, 224, 151, 1)
       options:
-        scales: 
-          yAxes: 
+        scales:
+          yAxes:
           - ticks:
               min: 0
             gridLines:
@@ -329,7 +329,7 @@ components:
     data-category: cpu
     topic: rpi134/cpu_usage
     data-type: json
-    max-points: 1 
+    max-points: 1
     props:
     - 1min
     chart:
@@ -340,9 +340,9 @@ components:
       type: doughnut
       datasets:
       - label: 1min
-        backgroundColor: 
+        backgroundColor:
         - rgba(30, 30, 30, 0.4)
-        borderColor: 
+        borderColor:
         - rgba(30, 30, 30, 1)
       signal:
         blue:
@@ -351,14 +351,14 @@ components:
         yellow:
           backgroundColor: rgba(243, 247, 27, 0.8)
           borderColor: rgba(243, 247, 27, 1)
-        red: 
+        red:
           backgroundColor: rgba(236, 20, 143, 0.8)
           borderColor: rgba(236, 20, 143, 1)
       options:
-        legend: 
+        legend:
           display: false
-        elements: 
-          center: 
+        elements:
+          center:
             maxText: 100%
             text: ''
             fontColor: rgba(225, 228, 203, 0.8)
@@ -375,7 +375,7 @@ components:
     data-category: temperature
     topic: rpi134/temperature
     data-type: json
-    max-points: 1 
+    max-points: 1
     props:
     - cpu
     chart:
@@ -386,9 +386,9 @@ components:
       type: doughnut
       datasets:
       - label: cpu
-        backgroundColor: 
+        backgroundColor:
         - rgba(30, 30, 30, 0.4)
-        borderColor: 
+        borderColor:
         - rgba(30, 30, 30, 1)
       signal:
         blue:
@@ -397,14 +397,14 @@ components:
         yellow:
           backgroundColor: rgba(243, 247, 27, 0.8)
           borderColor: rgba(243, 247, 27, 1)
-        red: 
+        red:
           backgroundColor: rgba(236, 20, 143, 0.8)
           borderColor: rgba(236, 20, 143, 1)
       options:
-        legend: 
+        legend:
           display: false
-        elements: 
-          center: 
+        elements:
+          center:
             maxText: 100%
             text: ''
             fontColor: rgba(225, 228, 203, 0.8)
@@ -421,7 +421,7 @@ components:
     data-category: memory
     topic: rpi134/mem_usage
     data-type: json
-    max-points: 1 
+    max-points: 1
     props:
     - used
     - free
@@ -433,9 +433,9 @@ components:
       type: doughnut
       datasets:
       - label: used
-        backgroundColor: 
+        backgroundColor:
         - rgba(30, 30, 30, 0.4)
-        borderColor: 
+        borderColor:
         - rgba(30, 30, 30, 1)
       signal:
         blue:
@@ -444,14 +444,14 @@ components:
         yellow:
           backgroundColor: rgba(243, 247, 27, 0.8)
           borderColor: rgba(243, 247, 27, 1)
-        red: 
+        red:
           backgroundColor: rgba(236, 20, 143, 0.8)
           borderColor: rgba(236, 20, 143, 1)
       options:
-        legend: 
+        legend:
           display: false
-        elements: 
-          center: 
+        elements:
+          center:
             maxText: 100%
             text: ''
             fontColor: rgba(225, 228, 203, 0.8)
@@ -498,8 +498,8 @@ components:
         backgroundColor: rgba(243, 247, 27, 0.8)
         borderColor: rgba(243, 247, 27, 1)
       options:
-        scales: 
-          yAxes: 
+        scales:
+          yAxes:
           - ticks:
               max: 4
               min: 0
@@ -533,8 +533,8 @@ components:
         borderColor: rgba(21, 224, 151, 1)
       options:
         scaleShowLabels: false
-        scales: 
-          yAxes: 
+        scales:
+          yAxes:
           - ticks:
               min: 0
               max: 100
@@ -545,7 +545,7 @@ components:
           - gridLines:
               color: '#ccc'
               display: false
- 
+
   - id: sensor-line-rpi134-mem-usage
     type: sensor
     data-category: memory
@@ -576,8 +576,8 @@ components:
         borderColor: rgba(244, 66, 134, 1)
       options:
         scaleShowLabels: false
-        scales: 
-          yAxes: 
+        scales:
+          yAxes:
           - ticks:
               min: 0
             gridLines:
@@ -617,8 +617,8 @@ components:
         backgroundColor: rgba(21, 224, 151, 0.4)
         borderColor: rgba(21, 224, 151, 1)
       options:
-        scales: 
-          yAxes: 
+        scales:
+          yAxes:
           - ticks:
               min: 0
             gridLines:
@@ -730,7 +730,7 @@ components:
     - bps_out
 layout:
   all:
-  - 
+  -
     - id: cameras
       width: 6
       children:
@@ -741,13 +741,22 @@ layout:
           width: 6
       -
         - id: google-map-component
-          width: 12 
+          width: 12
           style: {height: 320px, margin: 10px 0 }
     - id: grafanas
       width: 6
       children:
       -
-  - 
+        - id: history-rpi133-cpu-usage
+          width: 12
+        - id: history-rpi134-cpu-usage
+          width: 12
+        - id: history-rpi133-traffic
+          width: 12
+        - id: history-rpi134-traffic
+          width: 12
+  rpi133:
+  -
     - id: cameras
       width: 6
       children:
@@ -756,7 +765,7 @@ layout:
       - id: doughnuts
         width: 3
         children:
-        - 
+        -
           - id: sensor-line-rpi133-traffic
             width: 12
         -
@@ -779,18 +788,18 @@ layout:
       children:
       -
         - id: history-rpi133-cpu-usage
-          width: 12 
+          width: 12
       -
         - id: history-rpi133-mem-usage
-          width: 12 
+          width: 12
       -
         - id: history-rpi133-temperature
-          width: 12 
+          width: 12
       -
         - id: history-rpi133-traffic
-          width: 12 
+          width: 12
   rpi134:
-  - 
+  -
     - id: cameras
       width: 6
       children:
@@ -799,7 +808,7 @@ layout:
       - id: doughnuts
         width: 3
         children:
-        - 
+        -
           - id: sensor-line-rpi134-traffic
             width: 12
         -
@@ -822,14 +831,14 @@ layout:
       children:
       -
         - id: history-rpi134-cpu-usage
-          width: 12 
+          width: 12
       -
         - id: history-rpi134-mem-usage
-          width: 12 
+          width: 12
       -
         - id: history-rpi134-temperature
-          width: 12 
+          width: 12
       -
         - id: history-rpi134-traffic
-          width: 12 
+          width: 12
 
