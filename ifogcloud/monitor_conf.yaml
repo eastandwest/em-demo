@@ -1,6 +1,8 @@
 modules:
   skyway:
-    key: db07bbb6-4ee8-4eb7-b0c2-b8b2e5c69ef9
+    key: peerjs
+    host: 165.254.239.231
+    port: 9000
   sensor:
     endpoint: /
 components:

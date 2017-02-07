@@ -34,25 +34,20 @@ sudo docker run -p 8083:8083 -p 8086:8086 -d demo-influxdb
 
 accsess admin UI with port 8083, then create database likewise 'mydb'
 
-## grafana
+## peerjs-server
 
 * build
 
 ```
-cd grafana
-sudo ./build.sh
+cd peerjs-server
+sudo docker build -t demo-peerjsserver . --no-cache=true
 ```
 
 * run
 
 ```
-sudo docker run -p 3000:3000 -d cxc-demo/grafana:latest
+sudo docker run -p 9000:9000 -d demo-peerjsserver
 ```
-
-* after
-
-accsess GUI console with port 3000, then edit graph setting
-
 
 ## ifogcloud
 
